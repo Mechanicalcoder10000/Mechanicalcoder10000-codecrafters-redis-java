@@ -19,6 +19,7 @@ public class Main {
           serverSocket.setReuseAddress(true);
           // Wait for connection from client.
           clientSocket = serverSocket.accept();
+
             OutputStream outputStream = clientSocket.getOutputStream();
             outputStream.write("+PONG\r\n".getBytes());
             PrintWriter printWriter = new PrintWriter(outputStream, true);
