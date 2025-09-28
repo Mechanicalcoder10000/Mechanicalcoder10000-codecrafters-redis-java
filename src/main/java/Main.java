@@ -25,6 +25,7 @@ public class Main {
             OutputStream outputStream = clientSocket.getOutputStream();
             outputStream.write("+PONG\r\n".getBytes());
             PrintWriter printWriter = new PrintWriter(outputStream, true);
+
             printWriter.println(outputStream);
 
         } catch (IOException e) {
