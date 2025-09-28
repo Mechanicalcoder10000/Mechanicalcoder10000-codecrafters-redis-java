@@ -11,6 +11,7 @@ public class Main {
 
       // Uncomment this block to pass the first stage
         ServerSocket serverSocket = null;
+
         Socket clientSocket = null;
         int port = 6379;
         try {
